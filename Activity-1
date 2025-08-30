@@ -1,0 +1,208 @@
+Activity-1
+
+ubuntu@ubuntu:~/My File.txt
+
+man ls-b
+Description:shows file names with special characters escaped.
+ls -b > output.txt
+Arduino  Documents  Music     Public     Videos
+Remarks:It escapes spaces and special characters with \.
+
+man ls -c
+Description:sort by, and show, ctime (time of last  change
+             of file  status  information);  with -l: show ctime and
+             sort by name.
+ls -c > output.txt
+output.txt
+Remarks:It does not show special details by itself,it just cahneges the order of files.
+
+man ls -d
+Description:list directories themselves, not their contents.
+ls -d > output.txt
+.
+Remarks:lists only the directory name themselves instead of showing everything inside them.
+
+man ls -f
+Description:List all entries in directory order.
+ls -f > output.txt
+.
+..
+output.txt
+Remarks:The outputs are not sorted alphabetically.
+
+man ls -g
+Description:like -l, but do not list owner.
+ls -g > output.txt
+total 4
+-rw-rw-r-- 1 ubuntu 2 Aug 28 16:22 output.txt
+Remarks:only the group name is displayed and the owner name is hidden.
+
+man ls -h
+Description: with -l and -s, print sizes like 1K 234M 2G etc.
+ls -lh
+total 4.0K
+-rw-rw-r-- 1 ubuntu ubuntu 11 Aug 28 17:29 output.txt
+Remarks: makes file size easy to read by showing KB,MB,GB instaed of long byte numbers.
+
+man ls -i
+Description: print the index number of each file
+ls -i > output.txt
+33410 output.txt
+Remarks: shows inode numbers  which are unique IDs for files in the filesystem.
+
+man ls -l
+Description: with -l and -s, print sizes like 1K 234M 2G etc.
+ls -l > output.txt
+total 4
+-rw-rw-r-- 1 ubuntu ubuntu 11 Aug 28 17:29 output.txt.
+Remarks: shows the complete details of files.
+
+man ls -m
+Description: fill width with a comma separated list of entries
+ls -m > output.txt
+output.txt
+Remarks: shows files in one line separated by commas.
+
+man ls -n
+Description: like -l, but list numeric user and group IDs.
+ls -n > output.txt
+total 4
+-rw-rw-r-- 1 1000 1000 11 Aug 28 17:39 output.txt
+Remarks:It shows numeric user and group IDs instead of names.
+
+man ls -o
+Description:like -l, but do not list group information.
+ls -o > output.txt
+total 4
+-rw-rw-r-- 1 ubuntu 11 Aug 28 17:39 output.txt
+Remarks: Hides the group column ,showing only the owner.
+
+
+man ls -p
+Description:append / indicator to directories
+ls -p > output.txt
+output.txt
+Remarks: helps to easity identify folders by adding a / at the end of their names
+
+man ls -q
+Description:print ? instead of nongraphic characters
+ls -q > output.txt
+output.txt
+Remarks:helps avoid display problem caused by strange characters in the file names
+
+man ls -r
+Description:reverse order while sorting
+ls -r > output.txt
+output.txt
+Remarks:lists files in reverse order.
+
+man ls -s
+Description:print the allocated size of each file, in blocks
+ls -s > output.txt
+total 4
+4 output.txt
+Remarks: tells you how much disk space each file takes
+
+man ls -t
+Description: sort by time, newest first
+ls -t > output.txt
+output.txt
+Remarks:helps you to find the most recently updated files
+
+man ls -u
+Description:sort by, and show, access time; with -l:  show
+             access  time and sort by name; otherwise: sort by access
+             time, newest first.
+ls -u > output.txt
+output.txt
+Remarks:focuses on when the file was last read/ussed not when it was edited.
+
+man ls -v
+Description: list entries by lines instead of by columns
+ls -v > output.txt
+output.txt
+Remarks:makes it easier to view files that have numbers in their names
+
+man ls -x
+Description:list entries by lines instead of by columns
+ls -x > output.txt
+output.txt
+Remarks: saves space by priiiinting files in row
+
+man ls -z
+Description:show SELinux security context.
+ls -Z > output.txt
+? output.txt
+Remarks:displays security attributes
+
+
+whoami
+Decription: Shows the currently logged in username.
+ubuntu
+Remarks:confirms your linux username.
+
+pwd
+Description:print working directory.
+home/ubuntu
+Remarks:shows your current directory
+
+cd
+Description:change directory.
+cd documents
+Remarks:switcjes to documnet folder
+
+cd /
+Description: change to root directory
+cd /
+Remarks: goes to the root of filesystem.
+
+cd ..
+Description: move one directory up
+cd ..
+Remarks:used for going to parent directory.
+
+cd <path>
+De4scription: change to a specified path.
+cd /var/log
+Remarks:jumps directly to given path.
+
+tree -l -L 1
+Description: show directory structue 1 level deep
+var/log/apt
+├── eipp.log.xz
+├── history.log
+└── term.log
+1 directory, 3 files
+Remarks:only top-level directories visible.
+
+tree -l -L 2
+Description:shows directory structure 2 level deep
+├── Destop
+├── Documnet
+└── downloads
+Remarks:shows two levels of directory hierarchy.
+
+tree -l -L 3
+Description:show directory structure 3 levels deep
+apt
+│   ├── eipp.log.xz
+│   ├── history.log
+│   └── term.log
+Remaks: Expands three directory levels.
+
+tree /var/log/apt -La 1
+Description:show hidden files too,only 1 level in var/log/apt.
+/var/log/apt
+├── eipp.log.xz
+├── history.log
+└── term.log
+1 directory, 3 files
+Remarks: Hidden files are included
+
+
+
+
+
+
+
+ 

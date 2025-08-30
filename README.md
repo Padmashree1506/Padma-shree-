@@ -58,5 +58,5 @@ I have also used networking command
  6. Added my own remarks.
 
  7. uploaded all into two markdown files,
-    Activity-1.mad
+    Activity-1.md
     Activity-2.md
